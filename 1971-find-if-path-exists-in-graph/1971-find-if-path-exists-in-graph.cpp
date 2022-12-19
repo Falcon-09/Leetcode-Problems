@@ -2,6 +2,7 @@ class Solution {
 public:
     
     bool dfs(int src,int dst,map<int,vector<int>> &g,vector<int> &vis){
+        if(vis[dst]) return true;
         vis[src] = 1;
         
         for(auto nbr:g[src]){
