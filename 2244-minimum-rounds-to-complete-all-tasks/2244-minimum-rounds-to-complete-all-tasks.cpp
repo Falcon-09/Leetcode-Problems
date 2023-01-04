@@ -3,7 +3,7 @@ public:
     int minimumRounds(vector<int>& tsk) {
         int n = tsk.size();
         
-        map<int,int> mp;
+        unordered_map<int,int> mp;
         
         for(auto x:tsk) mp[x]++;
         
